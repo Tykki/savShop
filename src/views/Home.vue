@@ -17,11 +17,13 @@
             <img :src="card.img" class="card-img" :alt="card.alt" />
 
             <div class="card-img-overlay">
+              <router-link to="/shop" class="text-decoration-none">
               <h3
                 class="card-title position-absolute top-50 start-50 translate-middle text-center border border-primary border-5 p-3"
               >
                 {{ card.name }}
               </h3>
+              </router-link>
             </div>
 
           </div>
@@ -29,9 +31,9 @@
         </article>
       </section>
       <section class="d-grid mx-auto">
-        <button type="button" class="btn btn-lg btn-outline-secondary mx-auto">
+        <router-link to="/shop" class="btn btn-lg btn-outline-secondary mx-auto">
           Shop All Collections
-        </button>
+        </router-link>
       </section>
     </div>
   </main>
