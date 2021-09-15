@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ..:: Tasks Left Till Deployment::..
 
 Finish All pages layout
@@ -20,3 +21,39 @@ Upload Images
 
 (Dev Stuff)
 Setup Git to upload build folder and make site displayable as work is being made
+=======
+***Front-End***
+
+..:: TODO List For Completion ::..
++ NavBar
+    - Cart quick-view dropdown
+    + Functionality
+        - Search bar should search active inventory
+
++ Shop
+    - A max height class is needed to cut the size of the y margins
+    + Functionality
+        - FIlters should work as shown
+
++ Item Display Pages
+    - Research
+
++ Cart
+    - Totals should be pulled from items
+    - Checkout should be a paypal button or some money vendor    
+
+
+
+..:: TODO List For Interation ::..
++ Routing
+    - when switching pages, the screen does not align back to top
+
+
+
+***Back-End***
+
+..:: TODO List For Completion ::..
+
+
+..:: TODO List For Interation ::..
+>>>>>>> ed8f60b8ef4ba7524ec1dca532728f2181337e56

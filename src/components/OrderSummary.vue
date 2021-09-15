@@ -38,13 +38,13 @@ export default {
   props: ['items'],
   setup(props) {
 
-    function cartTotal() {
-      let sum = 0;
-      for (let key in props.items) {
-        sum = sum + props.items[key].price
-      }
-      return sum;
-    }
+    // function cartTotal() {
+    //   let sum = 0;
+    //   for (let key in props.items) {
+    //     sum = sum + props.items[key].price
+    //   }
+    //   return sum;
+    // }
 
     console.log(props.items)
     return {};
