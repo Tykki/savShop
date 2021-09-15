@@ -14,7 +14,7 @@
       <small class="d-block text-capitalize">Type: {{ item.type }}</small>
     </div>
     <div class="col-3 text-end position-absolute top-50 end-0 translate-middle-y">
-      <span class="me-4">${{ item.price }}</span>
+      <span class="me-4">{{$filters.currency(item.price) }}</span>
     </div>
   </li>
 </template>

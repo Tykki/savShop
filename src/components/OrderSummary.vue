@@ -7,20 +7,23 @@
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Subtotal</h6>
+              <small class="text-muted">Tax</small> 
+              <br />
               <small class="text-muted">Shipping</small>
             </div>
             <div>
-              <span class="text-muted">$12</span>
+              <span class="">{{ $filters.currency(subtotal) }}</span>
               <br />
-              <span class="text-muted">$12</span>
+              <span class="text-muted">{{$filters.currency(tax)}}</span>
+              <br />
+              <span class="text-muted">{{$filters.currency(shipping)}}</span>
             </div>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Estimated Total</h6>
-              <small class="text-muted"></small>
             </div>
-            <span class="text-muted">$8</span>
+            <span class="">{{ $filters.currency(total) }}</span>
           </li>
         </ul>
 
@@ -33,21 +36,30 @@
 </template>
 
 <script>
+import { computed } from "vue";
+
 export default {
-  name: "Selections-List-Item",
+  name: "Order-Summary",
   props: ['items'],
   setup(props) {
+    const shipping = 6.99
+    const subtotal = computed (()=> {
+      let sum = 0;
+      for (let key of props.items) {
+        sum = sum + key.price
+        }
+      return sum
+    })
 
-    // function cartTotal() {
-    //   let sum = 0;
-    //   for (let key in props.items) {
-    //     sum = sum + props.items[key].price
-    //   }
-    //   return sum;
-    // }
+    const tax = computed (() => {
+     return subtotal.value * .11 
+    })
 
-    console.log(props.items)
-    return {};
+    const total = computed (() => {
+      return (subtotal.value + tax.value + shipping)
+    })
+    console.log(total)
+    return {subtotal, tax, shipping, total};
   },
 };
 </script>

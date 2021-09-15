@@ -12,4 +12,11 @@ import {
 library.add(faPlus, faMinus, faTrash, faCheck, faSearch, faShoppingCart, faGlobeAfrica, faRecycle, faGrinBeam);
 
 
-createApp(App).component('icon', Icon).use(store).use(router).mount('#app')
+const app = createApp(App)
+app.component('icon', Icon).use(store).use(router).mount('#app')
+
+app.config.globalProperties.$filters = {
+  currency(value) {
+    return '$' + parseFloat(value).toFixed(2);
+  }
+}

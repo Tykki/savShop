@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-..:: Tasks Left Till Deployment::..
-
-Finish All pages layout
-    - make sure all components are optimal
-
-Finish coding all interactivity on pages
-    - links to other pages
-
-Finish Router file
-    - Should have a link for all possible routes and redirect incorrect routes
-    - Should have a 404 pages
-
-Finish Vuex Shop
-    - Should be importing component stores
-    - All Application changing features should be handled here
-
-Start Backend
-Create Database
-Upload Images
-
-(Dev Stuff)
-Setup Git to upload build folder and make site displayable as work is being made
-=======
 ***Front-End***
 
 ..:: TODO List For Completion ::..
@@ -56,4 +32,3 @@ Setup Git to upload build folder and make site displayable as work is being made
 
 
 ..:: TODO List For Interation ::..
->>>>>>> ed8f60b8ef4ba7524ec1dca532728f2181337e56
