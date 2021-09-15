@@ -1,0 +1,33 @@
+Header
+    Cart should be interactive with numbered badge for cart volume
+    links to all main pages
+
+Home Page
+    image slider for feat content
+    display newest collections
+    link to to All collections
+
+
+About Page
+    image of dev and owner
+    3 things I stand for or support at the least
+
+
+Shop Page
+    Grid layout for the items the should stay responsive
+        Maybe on hover grid images could change
+    filters on the left that should be able to interact with Grid
+
+Cart Page
+    2 column layout with cart items and info on one and summary in other
+    Should be able to do edits on cart items
+    summary should lead to Checkout
+
+Item Display Page
+    Display High Quality Images in decently big size
+    have item info displayed
+    have a way to add to cart
+
+Checkout Page (maybe)
+    Really just a paypal handle?
+
